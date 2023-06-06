@@ -51,6 +51,9 @@
 
 
             <Button
+                x:Name="EntrarBtn"
+                Clicked="EntrarBtn_Clicked"
+                
                 Text="Entrar"
                 TextTransform="Uppercase"
                 HorizontalOptions="Center" />
@@ -62,13 +65,20 @@
                 HorizontalOptions="Center" />
 
             <Label
+                x:Name="SignUpLabel"
+                
                 Text="Cadastre-se!"
                 TextColor="Black"
                 TextTransform="Uppercase"
                 SemanticProperties.HeadingLevel="Level4"
                 FontSize="16"
                 HorizontalOptions="Center"
-                FontAttributes="Bold"/>
+                FontAttributes="Bold">
+                
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSignUpLabelClickedAsync"/>
+                </Label.GestureRecognizers>
+            </Label>
 
         </VerticalStackLayout>
     </ScrollView>

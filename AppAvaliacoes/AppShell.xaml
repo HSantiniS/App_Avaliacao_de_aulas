@@ -8,28 +8,31 @@
 
 	<TabBar>
 		<ShellContent
-			Title="Main"
 			Icon="iconblank.png"
-			ContentTemplate="{DataTemplate views:MainPage}" />
+			ContentTemplate="{DataTemplate views:MainPage}" 
+            Route="MainPage"/>
 		<ShellContent
-			Title="SignUp"
 			Icon="iconblank.png"
-			ContentTemplate="{DataTemplate views:SignUpPage}" />
+			ContentTemplate="{DataTemplate views:SignUpPage}" 
+            Route="SignUpPage"/>
 		<ShellContent
-			Title="PaAvaliations"
+			Title="PA"
 			Icon="iconlistdetail.png"
-			ContentTemplate="{DataTemplate views:PaAvaliationsPage}" />
+			ContentTemplate="{DataTemplate views:PaAvaliationsPage}" 
+            Route="PaAvaliationsPage"/>
 		<ShellContent
-			Title="BdAvaliations"
+			Title="BD"
 			Icon="iconlistdetail.png"
-			ContentTemplate="{DataTemplate views:BdAvaliationsPage}" />
+			ContentTemplate="{DataTemplate views:BdAvaliationsPage}" 
+            Route="BdAvaliationsPage"/>
 		<ShellContent
-			Title="IotAvaliations"
+			Title="IoT"
 			Icon="iconlistdetail.png"
-			ContentTemplate="{DataTemplate views:IotAvaliationsPage}" />
+			ContentTemplate="{DataTemplate views:IotAvaliationsPage}" 
+            Route="IotAvaliationsPage"/>
 		<ShellContent
-			Title="UserAccount"
 			Icon="iconblank.png"
-			ContentTemplate="{DataTemplate views:UserAccountPage}" />
+			ContentTemplate="{DataTemplate views:UserAccountPage}" 
+            Route="UserAccountPage"/>
 	</TabBar>
 </Shell>
