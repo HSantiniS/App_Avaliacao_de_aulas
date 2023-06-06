@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:vm="clr-namespace:AppAvaliacoes.ViewModels"
+			 x:Class="AppAvaliacoes.Views.MainPage"
+			 x:DataType="vm:MainViewModel">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center"
+            >
+
+            <Label
+                Text="Log-in"
+                TextTransform="Uppercase"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" 
+                FontAttributes="Bold"/>
+
+            <Label
+                Text="Email"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+
+            <Border Stroke="#E1E1E1"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 10, 10, 10, 10"
+                    Padding="2, 8"
+                    HorizontalOptions="Center">
+                <Entry Placeholder="your_email@gmail.com"/>
+            </Border>
+
+            <Label
+                Text="Senha"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+            <Border Stroke="#E1E1E1"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 10, 10, 10, 10"
+                    Padding="2, 8"
+                    HorizontalOptions="Center">
+                <Entry IsPassword="True" />
+            </Border>
+
+
+            <Button
+                Text="Entrar"
+                TextTransform="Uppercase"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Não possui uma conta?"
+                SemanticProperties.HeadingLevel="Level8"
+                FontSize="14"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Cadastre-se!"
+                TextColor="Black"
+                TextTransform="Uppercase"
+                SemanticProperties.HeadingLevel="Level4"
+                FontSize="16"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
