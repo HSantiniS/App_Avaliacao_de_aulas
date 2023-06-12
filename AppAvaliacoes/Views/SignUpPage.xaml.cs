@@ -7,4 +7,9 @@ public partial class SignUpPage : ContentPage
 		InitializeComponent();
 		BindingContext = viewModel;
 	}
+
+    private void LogInBtn_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }

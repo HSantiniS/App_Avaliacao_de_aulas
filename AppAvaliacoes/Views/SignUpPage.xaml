@@ -87,21 +87,25 @@
                 HorizontalOptions="Center" 
                 Margin="0,10"/>
 
-            
+
             <Label
                 Text="Já possui uma conta?"
                 SemanticProperties.HeadingLevel="Level8"
                 FontSize="14"
                 HorizontalOptions="Center" />
 
-            <Label
+            <Button
+                x:Name="LogInBtn"
                 Text="Conecte-se!"
-                TextColor="Black"
+                BackgroundColor="Transparent"
+                Padding="0,0,0,0"
+                Margin="0,0,0,0"
                 TextTransform="Uppercase"
-                SemanticProperties.HeadingLevel="Level4"
+                TextColor="Black"
                 FontSize="16"
                 HorizontalOptions="Center"
-                FontAttributes="Bold"/>
+                FontAttributes="Bold"
+                />
 
         </VerticalStackLayout>
     </ScrollView>

@@ -8,14 +8,13 @@ public partial class MainPage : ContentPage
 		BindingContext = viewModel;
 	}
 
-	//Não está funcionando --> mudar página
-	private async Task OnSignUpLabelClickedAsync( EventArgs e)
-	{
-        await Shell.Current.GoToAsync("SignUpPage");
+    private void SignUpBtn_Clicked(object sender, EventArgs e)
+    {
+
     }
 
-    private async Task EntrarBtn_ClickedAsync(object sender, EventArgs e)
+    private void EntrarBtn_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("PaAvaliationsPage");
+
     }
 }
