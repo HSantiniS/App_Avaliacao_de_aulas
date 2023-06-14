@@ -12,3 +12,6 @@ global using System.Globalization;
 global using System.Runtime.CompilerServices;
 global using System.Text.Json;
 global using System.Threading.Tasks;
+global using Microsoft.Data.SqlClient;
+global using Microsoft.SqlServer;
+global using System.ComponentModel.Design.Serialization;

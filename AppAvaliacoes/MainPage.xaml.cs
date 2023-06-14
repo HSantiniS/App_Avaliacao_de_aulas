@@ -22,8 +22,20 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private void EntrarBtn_Clicked(object sender, EventArgs e)
+    private async void EntrarBtn_Clicked(object sender, EventArgs e)
     {
+        SqlCommands cmd = new SqlCommands();
+
+        if (/* cmd.checaUsuarios(emailEntry.Text, passwordEntry.Text)*/ -1 > 0)
+        {
+            
+        }
+        else
+        {
+            
+        }
+
+
         try
         {
         } catch (Exception ex) { }

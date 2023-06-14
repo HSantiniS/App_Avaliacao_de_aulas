@@ -33,7 +33,9 @@
                     StrokeShape="RoundRectangle 10, 10, 10, 10"
                     Padding="2, 8"
                     HorizontalOptions="Center">
-                <Entry Placeholder="your_email@gmail.com"/>
+                
+                <Entry x:Name="emailEntry"
+                    Placeholder="your_email@gmail.com"/>
             </Border>
 
             <Label
@@ -47,7 +49,9 @@
                     StrokeShape="RoundRectangle 10, 10, 10, 10"
                     Padding="2, 8"
                     HorizontalOptions="Center">
-                <Entry IsPassword="True" />
+                
+                <Entry x:Name="passwordEntry"
+                    IsPassword="True" />
             </Border>
 
 
