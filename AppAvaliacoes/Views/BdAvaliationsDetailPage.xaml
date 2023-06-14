@@ -3,7 +3,8 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 			 xmlns:vm="clr-namespace:AppAvaliacoes.ViewModels"
 			 x:Class="AppAvaliacoes.Views.BdAvaliationsDetailPage"
-			 x:DataType="vm:BdAvaliationsDetailViewModel">
+			 x:DataType="vm:BdAvaliationsDetailViewModel"
+             BackgroundColor="White">
 	<ScrollView>
 		<VerticalStackLayout Margin="12">
 			<Label Text="{Binding Item.Title}" FontSize="Header" />

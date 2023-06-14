@@ -2,14 +2,17 @@
 
 public partial class SignUpPage : ContentPage
 {
-	public SignUpPage(SignUpViewModel viewModel)
+    public SignUpPage(SignUpViewModel viewModel)
 	{
-		InitializeComponent();
+		InitializeComponent(); 
 		BindingContext = viewModel;
 	}
 
-    private void LogInBtn_Clicked(object sender, EventArgs e)
+    private async void LogInBtn_Clicked(object sender, EventArgs e)
     {
-
+        try
+        {
+            await Shell.Current.GoToAsync("..");
+        }catch(Exception ex) { }
     }
 }

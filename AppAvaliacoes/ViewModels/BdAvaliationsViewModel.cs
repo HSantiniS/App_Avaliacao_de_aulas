@@ -12,8 +12,8 @@ public partial class BdAvaliationsViewModel : BaseViewModel
 
 	public BdAvaliationsViewModel(SampleDataService service)
 	{
-		dataService = service;
-	}
+        dataService = service;
+    }
 
 	[RelayCommand]
 	private async void OnRefreshing()

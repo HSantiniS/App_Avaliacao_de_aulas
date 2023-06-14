@@ -1,4 +1,6 @@
-﻿namespace AppAvaliacoes.Views;
+﻿using AppAvaliacoes.ViewModels;
+
+namespace AppAvaliacoes.Views;
 
 public partial class MainPage : ContentPage
 {
@@ -8,13 +10,22 @@ public partial class MainPage : ContentPage
 		BindingContext = viewModel;
 	}
 
-    private void SignUpBtn_Clicked(object sender, EventArgs e)
+    private async void SignUpBtn_Clicked(object sender, EventArgs e)
     {
+        try
+        {
+            await Shell.Current.GoToAsync(nameof(SignUpPage));
+        }
+        catch (Exception ex)
+        {
 
+        }
     }
 
     private void EntrarBtn_Clicked(object sender, EventArgs e)
     {
-
+        try
+        {
+        } catch (Exception ex) { }
     }
 }

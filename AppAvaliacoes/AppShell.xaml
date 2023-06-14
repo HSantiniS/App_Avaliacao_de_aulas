@@ -4,18 +4,18 @@
 	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:views="clr-namespace:AppAvaliacoes.Views"
-	xmlns:local="clr-namespace:AppAvaliacoes">
+	xmlns:local="clr-namespace:AppAvaliacoes"
+    FlyoutBehavior="Disabled">
 
-	<TabBar>
-		<ShellContent
-			Icon="iconblank.png"
-			ContentTemplate="{DataTemplate views:MainPage}" 
-            Route="MainPage"/>
-		<ShellContent
-			Icon="iconblank.png"
-			ContentTemplate="{DataTemplate views:SignUpPage}" 
-            Route="SignUpPage"/>
-		<ShellContent
+
+
+    <TabBar>
+        <ShellContent
+		Icon="iconblank.png"
+		ContentTemplate="{DataTemplate views:MainPage}" 
+		Route="MainPage"/>
+
+        <ShellContent
 			Title="PA"
 			Icon="iconlistdetail.png"
 			ContentTemplate="{DataTemplate views:PaAvaliationsPage}" 
