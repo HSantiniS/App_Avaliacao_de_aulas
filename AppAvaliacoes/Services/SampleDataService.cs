@@ -4,13 +4,13 @@ public class SampleDataService
 {
 	public async Task<IEnumerable<SampleItem>> GetItems()
 	{
-		await Task.Delay(1000); // Artifical delay to give the impression of work
+		await Task.Delay(1); // Artifical delay to give the impression of work
 
 		var random = new Random().Next();
 
 		var result = new List<SampleItem>();
 
-		for (var i = 0; i < 40; i++)
+		for (var i = 0; i < 2; i++)
 		{
 			result.Add(new SampleItem
 			{

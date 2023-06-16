@@ -24,20 +24,11 @@ public partial class MainPage : ContentPage
 
     private async void EntrarBtn_Clicked(object sender, EventArgs e)
     {
-        SqlCommands cmd = new SqlCommands();
-
-        if (/* cmd.checaUsuarios(emailEntry.Text, passwordEntry.Text)*/ -1 > 0)
-        {
-            
-        }
-        else
-        {
-            
-        }
-
+        
 
         try
         {
+            await Shell.Current.GoToAsync(nameof(SignUpPage));
         } catch (Exception ex) { }
     }
 }

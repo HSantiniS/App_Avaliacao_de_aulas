@@ -35,7 +35,8 @@
                     HorizontalOptions="Center">
                 
                 <Entry x:Name="emailEntry"
-                    Placeholder="your_email@gmail.com"/>
+                    Placeholder="your_email@gmail.com"
+                       Keyboard="Email"/>
             </Border>
 
             <Label

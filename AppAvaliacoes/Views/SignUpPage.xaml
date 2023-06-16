@@ -47,7 +47,8 @@
                     StrokeShape="RoundRectangle 10, 10, 10, 10"
                     Padding="2, 8"
                     HorizontalOptions="Center">
-                <Entry Placeholder="your_email@gmail.com"/>
+                <Entry Placeholder="your_email@gmail.com"
+                       Keyboard="Email"/>
             </Border>
 
             

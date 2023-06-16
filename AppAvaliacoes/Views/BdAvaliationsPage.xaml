@@ -7,15 +7,18 @@
 			 x:DataType="vm:BdAvaliationsViewModel"
              BackgroundColor="White">
 	<RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshingCommand}">
-		<CollectionView ItemsSource="{Binding Items}" RemainingItemsThreshold="10" RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
+		<CollectionView ItemsSource="{Binding Items}" RemainingItemsThreshold="1" RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
 			<CollectionView.ItemTemplate>
 				<DataTemplate x:DataType="m:SampleItem">
 					<Frame Margin="4" Padding="12">
 						<Frame.GestureRecognizers>
 							<TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:BdAvaliationsViewModel}}, Path=GoToDetailsCommand}" CommandParameter="{Binding .}" />
 						</Frame.GestureRecognizers>
-						<Label Text="{Binding Title}" FontSize="Large" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" />
-					</Frame>
+                        <StackLayout>
+                            <Label Text="Banco de Dados" FontSize="Medium" TextColor="Black" />
+                            <Label Text="Gustavo Vinicius - Dia dd/mm" FontSize="Default" TextColor="Gray"/>
+                        </StackLayout>
+                    </Frame>
 				</DataTemplate>
 			</CollectionView.ItemTemplate>
 		</CollectionView>
