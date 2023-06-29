@@ -1,1 +1,1 @@
-C:\Users\Aluno\Desktop\App_Avaliacao_de_aulas\AppAvaliacoes\AppAvaliacoes.csproj;x64
+C:\Projetos\C# Projects\App_Avaliacao_de_aulas\AppAvaliacoes\AppAvaliacoes.csproj;x64

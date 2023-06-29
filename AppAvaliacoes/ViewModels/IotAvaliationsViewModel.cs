@@ -33,7 +33,7 @@ public partial class IotAvaliationsViewModel : BaseViewModel
 	[RelayCommand]
 	public async Task LoadMore()
 	{
-		var items = await dataService.GetItems();
+		var items = await dataService.GetItems("Internet das Coisas");
 
 		foreach (var item in items)
 		{
@@ -43,7 +43,7 @@ public partial class IotAvaliationsViewModel : BaseViewModel
 
 	public async Task LoadDataAsync()
 	{
-		Items = new ObservableCollection<SampleItem>(await dataService.GetItems());
+		Items = new ObservableCollection<SampleItem>(await dataService.GetItems("Internet das Coisas"));
 	}
 
 	[RelayCommand]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YUQmC3VNzjjwA5fFg4Tgvs1CEdhc+fFlqIAPYIiT4Ic4uVpOqLXOEnYxeFcgJjEs13g7opKPem6N9uOC2tKoJg==",
+  "dgSpecHash": "YJtxeGLZRYQuiCMs2+qIiNbdMAOGAfRmtuUXT/dIaEau1bOzSqulSXH2AtB2js/2iy/f77VKF2gbbsjvlOO+SA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sucesso em Vendas\\Desktop\\App_Avaliacao_de_aulas\\App_Avaliacao_de_aulas\\AppAvaliacoes\\AppAvaliacoes.csproj",
+  "projectFilePath": "C:\\Projetos\\C# Projects\\App_Avaliacao_de_aulas\\AppAvaliacoes\\AppAvaliacoes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sucesso em Vendas\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Sucesso em Vendas\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

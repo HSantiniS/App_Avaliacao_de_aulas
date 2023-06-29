@@ -5,4 +5,6 @@ public partial class PaAvaliationsDetailViewModel : BaseViewModel
 {
 	[ObservableProperty]
 	SampleItem item;
+
+
 }

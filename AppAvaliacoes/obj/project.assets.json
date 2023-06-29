@@ -50820,11 +50820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sucesso em Vendas\\Desktop\\App_Avaliacao_de_aulas\\App_Avaliacao_de_aulas\\AppAvaliacoes\\AppAvaliacoes.csproj",
+      "projectUniqueName": "C:\\Projetos\\C# Projects\\App_Avaliacao_de_aulas\\AppAvaliacoes\\AppAvaliacoes.csproj",
       "projectName": "AppAvaliacoes",
-      "projectPath": "C:\\Users\\Sucesso em Vendas\\Desktop\\App_Avaliacao_de_aulas\\App_Avaliacao_de_aulas\\AppAvaliacoes\\AppAvaliacoes.csproj",
+      "projectPath": "C:\\Projetos\\C# Projects\\App_Avaliacao_de_aulas\\AppAvaliacoes\\AppAvaliacoes.csproj",
       "packagesPath": "C:\\Users\\Sucesso em Vendas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sucesso em Vendas\\Desktop\\App_Avaliacao_de_aulas\\App_Avaliacao_de_aulas\\AppAvaliacoes\\obj\\",
+      "outputPath": "C:\\Projetos\\C# Projects\\App_Avaliacao_de_aulas\\AppAvaliacoes\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

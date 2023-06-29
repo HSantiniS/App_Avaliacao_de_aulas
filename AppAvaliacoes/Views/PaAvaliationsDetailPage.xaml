@@ -19,15 +19,22 @@
             TextColor="Black"/>
 
         <Label
-            Text="Dia dd/mm"
             SemanticProperties.HeadingLevel="Level8"
             FontSize="Default"
             HorizontalOptions="Start"
             Grid.ColumnSpan="2"
             Grid.Row="1"
-            TextColor="Black"/>
+            TextColor="Black">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Dia "/>
+                    <Span Text="{Binding Item.Data, StringFormat='{0:dd/MM/yyyy}'}"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
         <Label
-            Text="Harrison Santos"
+            Text="{Binding Item.Professor}"
             SemanticProperties.HeadingLevel="Level8"
             FontSize="Default"
             HorizontalOptions="Start"
@@ -37,7 +44,7 @@
 
         <Label
             Padding="0,15"
-            Text="Detalhes e bla bla blah"
+            Text="{Binding Item.Descricao}"
             SemanticProperties.HeadingLevel="Level8"
             FontSize="Default"
             HorizontalOptions="Start"
@@ -67,20 +74,35 @@
             Grid.ColumnSpan="2"
             Grid.Row="6"
             Spacing="5">
-            <Image Source="https://cdn-icons-png.flaticon.com/512/13/13595.png" HeightRequest="40">
-
+            <Image Source="estrela_nao_preenchida.png" HeightRequest="40"
+                   x:Name="EstrelaUm">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NotaEscolhida_Um"/>
+                </Image.GestureRecognizers>
             </Image>
-            <Image Source="https://cdn-icons-png.flaticon.com/512/13/13595.png" HeightRequest="40">
-
+            <Image Source="estrela_nao_preenchida.png" HeightRequest="40"
+                   x:Name="EstrelaDois">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NotaEscolhida_Dois"/>
+                </Image.GestureRecognizers>
             </Image>
-            <Image Source="https://cdn-icons-png.flaticon.com/512/13/13595.png" HeightRequest="40">
-
+            <Image Source="estrela_nao_preenchida.png" HeightRequest="40"
+                   x:Name="EstrelaTres">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NotaEscolhida_Tres"/>
+                </Image.GestureRecognizers>
             </Image>
-            <Image Source="https://cdn-icons-png.flaticon.com/512/13/13595.png" HeightRequest="40">
-
+            <Image Source="estrela_nao_preenchida.png" HeightRequest="40"
+                   x:Name="EstrelaQuatro">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NotaEscolhida_Quatro"/>
+                </Image.GestureRecognizers>
             </Image>
-            <Image Source="https://cdn-icons-png.flaticon.com/512/13/13595.png" HeightRequest="40">
-
+            <Image Source="estrela_nao_preenchida.png" HeightRequest="40"
+                   x:Name="EstrelaCinco">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NotaEscolhida_Cinco"/>
+                </Image.GestureRecognizers>
             </Image>
         </HorizontalStackLayout>
 
@@ -94,7 +116,7 @@
             Grid.ColumnSpan="2"
             Grid.Row="7">
 
-            <Entry x:Name="ComentarioEntry"
+            <Entry x:Name="comentarioEntry"
                    MaxLength="100"/>
         </Border>
 
@@ -114,7 +136,7 @@
         </HorizontalStackLayout>
 
 
-        <ImageButton Source="https://img.freepik.com/icones-gratis/aviao-de-papel_318-318253.jpg"
+        <ImageButton Source="icone_enviar_avaliacao.png"
                      Padding="9"
                      Margin="0,0,0,15"
                      Aspect="AspectFit"
@@ -123,7 +145,11 @@
                      WidthRequest="75"
                      HeightRequest="75"
                      Grid.ColumnSpan="2"
-                     Grid.Row="9"/>
+                     Grid.Row="9">
+            <ImageButton.GestureRecognizers>
+                <TapGestureRecognizer Tapped="EnviarAvaliacao"/>
+            </ImageButton.GestureRecognizers>
+        </ImageButton>
 
         <Line
             X2="400"

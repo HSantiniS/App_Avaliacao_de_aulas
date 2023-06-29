@@ -18,7 +18,7 @@ public partial class BdAvaliationsViewModel : BaseViewModel
 	[RelayCommand]
 	private async void OnRefreshing()
 	{
-		IsRefreshing = true;
+        IsRefreshing = true;
 
 		try
 		{
@@ -26,14 +26,14 @@ public partial class BdAvaliationsViewModel : BaseViewModel
 		}
 		finally
 		{
-			IsRefreshing = false;
+            IsRefreshing = false;
 		}
 	}
 
 	[RelayCommand]
 	public async Task LoadMore()
 	{
-		var items = await dataService.GetItems();
+		var items = await dataService.GetItems("Banco de Dados");
 
 		foreach (var item in items)
 		{
@@ -43,7 +43,7 @@ public partial class BdAvaliationsViewModel : BaseViewModel
 
 	public async Task LoadDataAsync()
 	{
-		Items = new ObservableCollection<SampleItem>(await dataService.GetItems());
+		Items = new ObservableCollection<SampleItem>(await dataService.GetItems("Banco de Dados"));
 	}
 
 	[RelayCommand]

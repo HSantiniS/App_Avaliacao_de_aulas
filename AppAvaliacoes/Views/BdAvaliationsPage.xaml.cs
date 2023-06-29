@@ -1,4 +1,6 @@
-﻿namespace AppAvaliacoes.Views;
+﻿using System.Data;
+
+namespace AppAvaliacoes.Views;
 
 public partial class BdAvaliationsPage : ContentPage
 {
@@ -9,7 +11,7 @@ public partial class BdAvaliationsPage : ContentPage
 		InitializeComponent();
 
 		BindingContext = ViewModel = viewModel;
-	}
+    }
 
 	protected override async void OnNavigatedTo(NavigatedToEventArgs args)
 	{

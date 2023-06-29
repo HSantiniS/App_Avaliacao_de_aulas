@@ -2,7 +2,11 @@
 
 public class SampleItem
 {
-	public string Title { get; set; }
+	public int IdAula { get; set; }
 
-	public string Description { get; set; }
+	public DateTime Data { get; set; }
+
+	public string Professor { get; set; }
+
+	public string Descricao { get; set; }
 }
